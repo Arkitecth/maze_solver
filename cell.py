@@ -18,6 +18,8 @@ class Cell:
         self._y1 = y1
         self._x2 = x2
         self._y2 = y2
+        if self._win == None:
+            return
 
         if self.has_left_wall:
             line = Line(Point(self._x1, self._y1), Point(self._x1, self._y2))
